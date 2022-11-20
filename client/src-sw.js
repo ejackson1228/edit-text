@@ -39,7 +39,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 registerRoute(
   matchCallback,
   new StaleWhileRevalidate({
-    cacheName: 'asset-cache',
+    cacheName: 'cache-assets',
     plugins: [
       new CacheableResponsePlugin({
         statuses: [0, 200],

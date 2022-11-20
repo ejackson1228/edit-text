@@ -4,7 +4,7 @@ const butInstall = document.getElementById('buttonInstall');
 // TODO: Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault(); // prevent mini-info bar from appearing on mobile
-    window.stashedPrompt = event; // stash prompt so it can be triggered on install 'click' https://web.dev/codelab-make-installable/ << 
+    window.stashedPrompt = event; // stash prompt so it can be triggered on install 'click' 
     butInstall.style.visibility = 'visible';
 });
 

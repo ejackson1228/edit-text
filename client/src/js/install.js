@@ -8,7 +8,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
 });
 
 // TODO: Implement a click event handler on the `butInstall` element
-butInstall.addEventListener('click', async (event) => {
+butInstall.addEventListener('click', async () => {
     window.prompt();
     butInstall.setAttribute('disabled', true); // disable install btn after click to install
     butInstall.textContent = 'Installed!'; //once installed, let the user know with the button

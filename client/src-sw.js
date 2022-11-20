@@ -15,6 +15,7 @@ const matchCallback = ({ request }) => {
     request.destination === 'assets'
   )
 }
+
 const pageCache = new CacheFirst({
   cacheName: 'page-cache',
   plugins: [
